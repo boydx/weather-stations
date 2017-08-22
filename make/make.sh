@@ -1,8 +1,13 @@
-cd /var/www/vhosts/outrageGIS.com/httpdocs/weather/make
+#!/bin/bash
+# Group of bash scripts to create data
+
+cd httpdocs/weather/make
 sh getimg.sh
 sh getweobv.sh
 sh make-weather-img.sh
 sh make-weobv.sh
 sh put.files.sh
-date +'%d' > /var/www/vhosts/outrageGIS.com/httpdocs/weather/img/day
-date +'%m' > /var/www/vhosts/outrageGIS.com/httpdocs/weather/img/month
+sh make-radar.sh
+sh make-cuga-sat-animation.sh
+date +'%d' > httpdocs/weather/img/day
+date +'%m' > httpdocs/weather/img/month

@@ -1,2 +1,6 @@
-cd /var/www/vhosts/outrageGIS.com/httpdocs/weather/img/animation
-mkdir /var/www/vhosts/outrageGIS.com/httpdocs/weather/img/animation/$(cat date)
+#!/bin/bash
+
+# Make folder for yesterday's weather
+
+cd httpdocs/weather/img/animation
+mkdir httpdocs/weather/img/animation/$(cat date)

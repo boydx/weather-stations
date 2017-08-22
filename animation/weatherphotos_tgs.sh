@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Create monthly archive and remove old imagery. Keep the .jpgs in case something cool happens, right?
+# First archive was create March, 2008
+
 tar -czf 1108.tgz 1108*
 rm 1108*/*.jpg
 tar -czf 1109.tgz 1109*
