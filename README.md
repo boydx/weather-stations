@@ -40,6 +40,7 @@ The scripts have a few goals:
 * Archive of time-lapse imagery for the Great Smoky Mountains [(https://www.outragegis.com/weather/img/animation/)](https://www.outragegis.com/weather/img/animation/)
 * Cumberland Gap National Historical Park live weather [(https://www.outragegis.com/weather/gap)](https://www.outragegis.com/weather/gap)
 * Latest radar for the Daniel Boone country [(https://www.sheltoweetrace.com/hike/radar.html)](https://www.sheltoweetrace.com/hike/radar.html)
+* GOES-16 imagery for Kentucky [(https://www.outragegis.com/weather/goes16/current.jpg)](https://www.outragegis.com/weather/goes16/current.jpg)
 
 ## Data sources
 
