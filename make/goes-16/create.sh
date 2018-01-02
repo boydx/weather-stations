@@ -1,5 +1,6 @@
 #!/bin/bash
-# Download and manipulate GEOS-16 satellite imagery
+# Download and manipulate GEOS-16 satellite imagery that is now active. Dec 31, 2017.
+# Source: https://www.star.nesdis.noaa.gov/GOES/GOES16_sectors.php?sector=cgl
 
 # remove existing jpegs
 rm *.jpg
@@ -11,7 +12,7 @@ timez=$(TZ=UTC date +%y%j%H)
 timem=$(TZ=UTC date +%M)  
 
 # create offset to find latest 15 images
-timemm=$((timem-15)); echo $timemm;
+timemm=$((timem-15))
 
 # remove negative values
 if [ $timemm -lt 0 ]

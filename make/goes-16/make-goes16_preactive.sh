@@ -14,7 +14,7 @@ date +%l:%M%P\ %a,\ %b\ %d,\ %Y | sed 's/$/ - http:\/\/www.outrageGIS.com/g' > d
 t=$(date +%H%M)
 
 # Get GEOS16 latest visible satellite
-curl -o g16.jpg http://whirlwind.aos.wisc.edu/~wxp/goes16/vis_sqrt/full/latest_full_1.jpg
+curl -o g16.jpg http://whirlwind.aos.wisc.edu/~wxp/goes16/vis/full/latest_full_1.jpg
 
 # Crop and rotate
 convert -extract 2000x2000+5950+2500  g16.jpg   \
