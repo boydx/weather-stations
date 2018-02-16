@@ -44,7 +44,7 @@ The scripts have a few goals:
 
 ## Data sources
 
-The source data primarily comes from the National Weather Service and various NOAA agencies. The exact URLs are shown in the ```get-webobv.sh``` and ```get-img.sh``` scripts. Also using/exploring the [Dark Sky API](https://darksky.net/dev) for hyperlocal data. [The Weather Underground API](https://www.wunderground.com/weather/api/d/docs) for RSS feeds has also been used in the past.
+The source data primarily comes from the National Weather Service and various NOAA agencies. The exact URLs are shown in the ```get-webobv.sh``` and ```get-img.sh``` scripts. Also using/exploring the [Dark Sky API](https://darksky.net/dev) for hyperlocal data. [The Weather Underground API](https://www.wunderground.com/weather/api/d/docs) for RSS feeds has also been used in the past. Imagery for the GOES-16 satellite is downloaded from UW-Madison Department of Atmospheric and Oceanic Sciences, [https://www.aos.wisc.edu/](https://www.aos.wisc.edu/)
 
 ## Author
 
