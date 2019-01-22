@@ -1,0 +1,3 @@
+"_resize_C02.tif"
+"_green_.tif"
+"_us_C01.tif"

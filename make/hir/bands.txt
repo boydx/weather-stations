@@ -1,0 +1,3 @@
+"final/rgb/_crop_C02_.tif"
+"final/rgb/_green_.tif"
+"final/rgb/_crop_C01_.tif"
