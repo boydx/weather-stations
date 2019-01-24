@@ -24,7 +24,7 @@ var camName =   ["Look Rock",
                 "http://www.outragegis.com/weather/img/JoyceKilmer-400.jpg",
                 "https://phenocam.sr.unh.edu/data/latest/thumbs/smokydome.thumb.jpg",
                 "https://phenocam.sr.unh.edu/data/latest/thumbs/mammothcave.thumb.jpg",
-                "http://www.outragegis.com/weather/img/DBoone-400.jpg"
+                "http://www.outragegis.com/weather/img/DBoone-400.jpg",
                 "https://phenocam.sr.unh.edu/data/latest/thumbs/robinson2.thumb.jpg"],
     camInfo =   ["East", "East", "West", "Southeast", "West", "North", "North", "South", "West"],
-    camElev =   [2628, 5085, 4922, 5046, 4801, 6644, 741, 1400, 1585]
+    camElev =   [2628, 5085, 4922, 5046, 4801, 6644, 741, 1400, 1585];
