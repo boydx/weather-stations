@@ -3,7 +3,7 @@
 
 <head>
     <meta charset=utf-8 />
-    <title>Web Map Template</title>
+    <title>Weather webcams</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel='icon' href='https://newmapsplus.github.io/favicon.ico' type='image/x-icon' />
 
@@ -20,20 +20,19 @@
             font-weight: 300;
             color: #3d3d3d;
             font-size: 100%;
-
         }
 
         .grid-container {
             display: grid;
             grid-template-columns: auto 28vw;
-            grid-template-rows: auto 20vh;
+            grid-template-rows: auto 15vh;
         }
 
         /* Portrait mode */
 
         #map {
             width: 100%;
-            height: 80vh;
+            height: 85vh;
             grid-row-start: 1;
             grid-row-end: 2;
             grid-column-start: 1;
@@ -55,21 +54,17 @@
         }
 
         #legend img {
-            width: 150px;
-            display: inherit;
+            width: 12vw;
         }
 
+
+        #legend p,
         #legend h2 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-
-        #legend p {
             display: none;
         }
 
         #content {
-            height: 20vh;
+            height: 15vh;
             overflow: scroll;
         }
 
@@ -84,24 +79,21 @@
                 grid-row: 1 / 3;
                 /* Start at 1 and end at 3 */
                 grid-column: 1 / 2;
-
             }
 
             #legend {
                 padding: 10px;
                 grid-row: 1 / 3;
                 grid-column: 2 / 3;
-
-            }
-
-            .marker {
-                height: 35px;
-                text-align: center;
-                margin: 0 20px 5px 20px;
             }
 
             #legend img {
                 width: 100%;
+            }
+
+            #legend h2 {
+                font-size: 1.2em;
+                margin-bottom: 5px;
                 display: inherit;
             }
 
@@ -153,7 +145,6 @@
             font-size: 1.8em;
             margin: 0;
         }
-
     </style>
 </head>
 
@@ -194,7 +185,8 @@
             maxZoom: 9
         });
 
-        // add some tiles
+        // add some tiles 
+        // gdal2tiles
         var tilesgray = L.tileLayer('https://www.outragegis.com/weather/goes16/tilesgray/{z}/{x}/{y}.png', {
             tms: true,
             opacity: 1,
@@ -203,14 +195,16 @@
 
         // add some tiles
         var tiles = L.tileLayer('https://www.outragegis.com/weather/goes16/frame_goes16/{z}/{x}/{y}.png', {
-            opacity: 1
+            opacity: 1.0
         }).addTo(map);
 
         // Add markers with popups
         // Start without iterating through data
 
         markerOne = "<div><h2>" + camName[0] + "</h2>" +
-            "<img src='" + camURL[0] + "'alt='" + camName[0] + " webcam'>" +
+            "<img src='" + camURL[0] + "'alt='" + camName[0] + " webcam'" +
+            "title='" + camName[0] + " webcam, Elevation: " + camElev[0] + "ft, looking " +
+            camInfo[0] + "'>" +
             "<p>Elevation: " + camElev[0] + "ft, looking " +
             camInfo[0] + "</div>"
         L.marker(camCoords[0])
@@ -218,7 +212,9 @@
             .bindPopup(markerOne);
 
         markerTwo = "<div><h2>" + camName[1] + "</h2>" +
-            "<img src='" + camURL[1] + "'alt='" + camName[1] + " webcam'>" +
+            "<img src='" + camURL[1] + "'alt='" + camName[1] + " webcam'" +
+            "title='" + camName[1] + " webcam, Elevation: " + camElev[1] + "ft, looking " +
+            camInfo[1] + "'>" +
             "<p>Elevation: " + camElev[1] + "ft, looking " +
             camInfo[1] + "</div>"
         L.marker(camCoords[1])
@@ -226,7 +222,9 @@
             .bindPopup(markerTwo);
 
         markerThree = "<div><h2>" + camName[2] + "</h2>" +
-            "<img src='" + camURL[2] + "'alt='" + camName[2] + " webcam'>" +
+            "<img src='" + camURL[2] + "'alt='" + camName[2] + " webcam'" +
+            "title='" + camName[2] + " webcam, Elevation: " + camElev[2] + "ft, looking " +
+            camInfo[2] + "'>" +
             "<p>Elevation: " + camElev[2] + "ft, looking " +
             camInfo[2] + "</div>"
         L.marker(camCoords[2])
@@ -234,7 +232,9 @@
             .bindPopup(markerThree);
 
         markerFour = "<div><h2>" + camName[3] + "</h2>" +
-            "<img src='" + camURL[3] + "'alt='" + camName[3] + " webcam'>" +
+            "<img src='" + camURL[3] + "'alt='" + camName[3] + " webcam'" +
+            "title='" + camName[3] + " webcam, Elevation: " + camElev[3] + "ft, looking " +
+            camInfo[3] + "'>" +
             "<p>Elevation: " + camElev[3] + "ft, looking " +
             camInfo[3] + "</div>"
         L.marker(camCoords[3])
@@ -242,7 +242,9 @@
             .bindPopup(markerFour);
 
         markerFive = "<div><h2>" + camName[4] + "</h2>" +
-            "<img src='" + camURL[4] + "'alt='" + camName[4] + " webcam'>" +
+            "<img src='" + camURL[4] + "'alt='" + camName[4] + " webcam'" +
+            "title='" + camName[4] + " webcam, Elevation: " + camElev[4] + "ft, looking " +
+            camInfo[4] + "'>" +
             "<p>Elevation: " + camElev[4] + "ft, looking " +
             camInfo[4] + "</div>"
         L.marker(camCoords[4])
@@ -250,17 +252,21 @@
             .bindPopup(markerFive);
 
         markerEight = "<div><h2>" + camName[7] + "</h2>" +
-            "<img src='" + camURL[7] + "'alt='" + camName[7] + " webcam'>" +
+            "<img src='" + camURL[7] + "'alt='" + camName[7] + " webcam'" +
+            "title='" + camName[7] + " webcam, Elevation: " + camElev[7] + "ft, looking " +
+            camInfo[7] + "'>" +
             "<p>Elevation: " + camElev[7] + "ft, looking " +
-            camInfo[4] + "</div>"
+            camInfo[7] + "</div>"
         L.marker(camCoords[7])
             .addTo(map)
             .bindPopup(markerEight);
 
         markerNine = "<div><h2>" + camName[8] + "</h2>" +
-            "<img src='" + camURL[8] + "'alt='" + camName[8] + " webcam'>" +
+            "<img src='" + camURL[8] + "'alt='" + camName[8] + " webcam'" +
+            "title='" + camName[8] + " webcam, Elevation: " + camElev[8] + "ft, looking " +
+            camInfo[8] + "'>" +
             "<p>Elevation: " + camElev[8] + "ft, looking " +
-            camInfo[4] + "</div>"
+            camInfo[8] + "</div>"
         L.marker(camCoords[8])
             .addTo(map)
             .bindPopup(markerNine);
