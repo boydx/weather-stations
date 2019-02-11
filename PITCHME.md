@@ -1,5 +1,6 @@
 ---
-## Presentation @ boyd.xyz/w
+### Presentation @ 
+## boyd.xyz/w
 ### [repo](https://github.com/boydx/weather-stations)
 
 ---
@@ -21,9 +22,9 @@
 ---
 ## Goals
 @ul[squares]
-* 💡Maintain data hygiene
-* 💡Test-drive ArcGIS Pro
-* 💡Begin Red River Gorge base map
+* Maintain data hygiene
+* Test-drive ArcGIS Pro
+* Begin Red River Gorge base map
 @ulend
 
 
