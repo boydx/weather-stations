@@ -1,4 +1,4 @@
----
+---?image=presentation/img/st.svg
 <h3 style="color:rgba(255,255,255,0.2)">Presentation @</h3>
 ## boyd.xyz/w
 ### [repo](https://github.com/boydx/weather-stations)
@@ -12,7 +12,7 @@
 # Funsies
 
 ---?image=presentation/img/p003.jpg&opacity=0
-## Satellites, surveillance, & chemtrails
+## Satellites, surveillance, chemtrails
 
 
 ---
