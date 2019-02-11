@@ -10,7 +10,7 @@
 ## Weather mapping for
 # Funsies
 
----?image=presentation/img/p003.jpg&opacity=75
+---?image=presentation/img/p003.jpg&opacity=0
 ## Satellites, surveillance, & chemtrails
 
 
