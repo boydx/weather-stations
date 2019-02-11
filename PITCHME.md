@@ -15,7 +15,8 @@
 
 
 ---
-## Automating the capture, storage, and dissemination of webcam and satellite imagery
+## Automating 
+### the capture, storage, and dissemination of webcam and satellite imagery
 
 ---
 ## Goals

@@ -2,3 +2,6 @@ background-size : cover
 theme : night
 footnote : "Weather stations"
 theme-override : presentation/custom.css
+code-line-numbers : true
+layout : center-left
+transition : fade
