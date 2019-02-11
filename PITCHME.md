@@ -1,6 +1,6 @@
 ---
-# GEO 409:02
-## Intro to ArcGIS Pro and Python 3
+## Presentation: boyd.xyz/w
+### [repo](https://github.com/boydx/weather-stations)
 
 ---
 ## Goals
