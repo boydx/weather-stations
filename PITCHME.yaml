@@ -1,3 +1,4 @@
 background-size : cover
 theme : night
 footnote : "Weather stations"
+theme-override : presentation/custom.css
