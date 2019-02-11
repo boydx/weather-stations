@@ -10,7 +10,7 @@
 ## Weather mapping for
 # Funsies
 
----?image=presentation/img/p003.jpg
+---?image=presentation/img/p003.jpg&opacity=75
 ## Satellites, surveillance, & chemtrails
 
 
@@ -21,11 +21,9 @@
 ---
 ## Goals
 @ul[squares]
-* Maintain data hygiene
-* Test-drive ArcGIS Pro
-* Begin Red River Gorge base map
-* Start hacking Python (proper intro next module)
-* Stay warm
+* 💡Maintain data hygiene
+* 💡Test-drive ArcGIS Pro
+* 💡Begin Red River Gorge base map
 @ulend
 
 
