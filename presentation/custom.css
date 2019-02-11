@@ -407,3 +407,7 @@ hr.fade-away {
 div.pitch-menu ul i.fa.fa-download, div.pitch-menu ul i.fa.fa-print, div.pitch-menu ul i.fa.fa-external-link {
     padding-right: 5px;
 }
+
+body {
+    margin: 10px
+}
