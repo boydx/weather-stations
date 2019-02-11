@@ -1,6 +1,6 @@
 # National Park weather data
 
-A collection of Bash shell scripts to scrape/collect weather data, web camera images, radar imagery, satellite views, etc. to display current weather information, time-lapse animations, and create an archive of weather observations. 
+A collection of Bash shell and Python scripts to scrape/collect weather data, web camera images, radar imagery, satellite views, etc. to display current weather information, time-lapse animations, and create an archive of weather observations. The goal of this project is to maintain a library of recent weather imagery focused on Kentucky and south-central region of Appalachia.
 
 ## Prerequisites
 
@@ -36,17 +36,18 @@ The scripts have a few goals:
 
 ## Live examples
 
+* GOES-16 slippy map [(https://www.outragegis.com/weather/goes16)](https://www.outragegis.com/weather/goes16)
 * Great Smoky Mountains National Park live weather [(https://www.outragegis.com/weather/grsm/)](https://www.outragegis.com/weather/grsm/)
 * Archive of time-lapse imagery for the Great Smoky Mountains [(https://www.outragegis.com/weather/img/animation/)](https://www.outragegis.com/weather/img/animation/)
 * Cumberland Gap National Historical Park live weather [(https://www.outragegis.com/weather/gap)](https://www.outragegis.com/weather/gap)
 * Latest radar for the Daniel Boone country [(https://www.sheltoweetrace.com/hike/radar.html)](https://www.sheltoweetrace.com/hike/radar.html)
-* Current GOES-16 imagery for Kentucky [(https://www.outragegis.com/weather/goes16/current.jpg)](https://www.outragegis.com/weather/goes16/current.jpg)
+* GOES-16 imagery, satellite view [(https://www.outragegis.com/weather/goes16/current.jpg)](https://www.outragegis.com/weather/goes16/current.jpg)
   * Past two-hour animation: https://www.outragegis.com/weather/goes16/animation.gif
   * Yesterday's animation: https://www.outragegis.com/weather/goes16/yesterday.gif
 
 ## Data sources
 
-The source data primarily comes from the National Weather Service and various NOAA agencies. The exact URLs are shown in the ```get-webobv.sh``` and ```get-img.sh``` scripts. Also using/exploring the [Dark Sky API](https://darksky.net/dev) for hyperlocal data. [The Weather Underground API](https://www.wunderground.com/weather/api/d/docs) for RSS feeds has also been used in the past. Imagery for the GOES-16 satellite is downloaded from UW-Madison Department of Atmospheric and Oceanic Sciences, [https://www.aos.wisc.edu/](https://www.aos.wisc.edu/)
+The source data primarily comes from the National Weather Service and various NOAA agencies. The exact URLs are shown in the ```get-webobv.sh``` and ```get-img.sh``` scripts. Also using/exploring the [Dark Sky API](https://darksky.net/dev) for hyperlocal data. [The Weather Underground API](https://www.wunderground.com/weather/api/d/docs) for RSS feeds has also been used in the past. Imagery for the GOES-16 satellite is downloaded from [GOES on AWS](https://registry.opendata.aws/noaa-goes/) and, in the past, the UW-Madison Department of Atmospheric and Oceanic Sciences, [https://www.aos.wisc.edu/](https://www.aos.wisc.edu/).
 
 ## Author
 
