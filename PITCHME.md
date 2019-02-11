@@ -1,4 +1,4 @@
----?image=presentation/img/st.svg
+---?image=presentation/img/st-b.svg
 <h3 style="color:rgba(255,255,255,0.2)">Presentation @</h3>
 ## boyd.xyz/w
 ### [repo](https://github.com/boydx/weather-stations)
