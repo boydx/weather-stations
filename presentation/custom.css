@@ -1,3 +1,4 @@
+/*
 .reveal div.left-20 { float: left; z-index: -10; width: 20%; text-align: left; }
 .reveal div.left-30 { float: left; z-index: -10; width: 30%; text-align: left; }
 .reveal div.left-40 { float: left; z-index: -10; width: 40%; text-align: left; }
@@ -60,7 +61,7 @@
 .north-west { position: fixed; top: 25px; left: 11%; text-align: left; }
 .south-west { position: fixed; bottom: 35px; left: 11%; text-align: left; }
 
-/* Width calculation: span-X * (100% - 11% - 11% / 100) */
+
 .span-5  { width: 3.9% !important }
 .span-10 { width: 7.8% !important }
 .span-15 { width: 11.7% !important }
@@ -181,7 +182,7 @@
 .text-45 { font-size: 4.5em !important; }
 .text-50 { font-size: 5.0em !important; }
 
-/* fs-* Deprecated */
+
 .fs-01 { font-size: 0.1em !important; }
 .fs-02 { font-size: 0.2em !important; }
 .fs-03 { font-size: 0.3em !important; }
@@ -272,7 +273,7 @@
     border-top-right-radius: 50px;
 }
 
-/* GitPitch Menu Styling */
+
 
 .centered {
     display: flex;
@@ -407,6 +408,8 @@ hr.fade-away {
 div.pitch-menu ul i.fa.fa-download, div.pitch-menu ul i.fa.fa-print, div.pitch-menu ul i.fa.fa-external-link {
     padding-right: 5px;
 }
+
+*/
 
 body {
     margin: 10px
