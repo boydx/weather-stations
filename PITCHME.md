@@ -32,7 +32,7 @@
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
 # 2007
 
----?image=presentation/img/p003.jpg&opacity=10
+---?image=presentation/img/p003.jpg&opacity=40
 
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
