@@ -42,6 +42,31 @@
 
 ---?image=presentation/img/p006.jpg&opacity=25
 ## Great Smoky Mountain National Park
+[weather station](https://www.outragegis.com/weather/grsm/)
+
+---
+## Tech stack
+@ul[squares]
+* Ubuntu Linux
+* CLI text utilities, [grep](https://www.pcre.org/original/doc/html/pcregrep.html), [sed](https://www.gnu.org/software/sed/manual/sed.html), etc.
+* [Imagemagik](https://www.imagemagick.org/)
+* task scheduler [cron](https://en.wikipedia.org/wiki/Cron)
+* SCRAPE!
+@ulend
+
+---
+## Brief example
+@[2]
+@[3]
+@[4]
+@[5]
+```bash
+#!/bin/bash
+rm -f *.jpg 
+date +%l:%M%P\ %a,\ %b\ %d,\ %Y > date.txt
+wget http://www.nature.nps.gov/air/webcams/parks/grsmcam/grsm.jpg
+montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jpg
+```
 
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
