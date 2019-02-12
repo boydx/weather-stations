@@ -51,7 +51,7 @@
 * CLI text utilities, [grep](https://www.pcre.org/original/doc/html/pcregrep.html), [sed](https://www.gnu.org/software/sed/manual/sed.html), etc.
 * [Imagemagick](https://www.imagemagick.org/)
 * task scheduler [cron](https://en.wikipedia.org/wiki/Cron)
-* SCRAPE!
+* Brute force scraping
 @ulend
 
 ---
@@ -73,11 +73,6 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 ---
 <iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
 
----
-```bash
-#SCRAPE!
-pcregrep -M -A 90 "<style>" Sevier2.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SevierForecast2.txt
-```
 
 ---
 ## Make yesterday
@@ -104,18 +99,29 @@ cp -rf ../yesterday/ ../$(cat date)/
 @ul[squares]
 * Keep three years online
 * One year approximately 8 GB
-* [archive](https://www.outragegis.com/weather/img/animation/)
+* [yesterday's archived](https://www.outragegis.com/weather/img/animation/)
+@ulend
+
+
+---
+## Problems?
+@ul[squares]
+* HTML scraping is an alley fight 
+* Need a new satellite
 @ulend
 
 ---
-## Organization
-@ul[squares]
-* Keep GIS folder organized
-* Be consistent
-* Don't put a file >50 MB in repo
-* Don't put a .gdb folder in repo
-* Don't put a repo in repo
-@ulend
+```bash
+#Brute force! 
+pcregrep -M -A 90 "<style>" Sevier2.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SevierForecast2.txt
+```
+
+---?image=https://www.outragegis.com/weather/img/cuga-vis.jpg
+
+---?image=https://www.outragegis.com/weather/img/cuga-vis.jpg&opacity=25
+## Not detailed enough
+### We expect more from our data.
+
 
 ---
 ## Example folder structure
