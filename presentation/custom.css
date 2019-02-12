@@ -423,6 +423,6 @@ div.pitch-menu ul i.fa.fa-download, div.pitch-menu ul i.fa.fa-print, div.pitch-m
 
 
 .reveal .slides ul {
-    margin: 0 0 0 3em;
-    opacity: 0.7;
+    margin: 0 0 0 30px;
+    opacity: 0.9;
 }
