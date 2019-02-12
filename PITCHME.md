@@ -49,7 +49,7 @@
 @ul[squares]
 * Ubuntu Linux
 * CLI text utilities, [grep](https://www.pcre.org/original/doc/html/pcregrep.html), [sed](https://www.gnu.org/software/sed/manual/sed.html), etc.
-* [Imagemagik](https://www.imagemagick.org/)
+* [Imagemagick](https://www.imagemagick.org/)
 * task scheduler [cron](https://en.wikipedia.org/wiki/Cron)
 * SCRAPE!
 @ulend
@@ -68,6 +68,7 @@ wget http://www.nature.nps.gov/air/webcams/parks/grsmcam/grsm.jpg
 montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jpg
 ```
 
+---?image=https://www.outragegis.com/weather/img/LookRock.jpg&size=contain
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
 
