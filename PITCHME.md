@@ -35,9 +35,13 @@
 # 2007
 @ul[squares]
 * Year of the webcam
+* Collect images every 15 minutes
 @ulend
 
 ---?image=presentation/img/p006.jpg
+
+---?image=presentation/img/p006.jpg&opacity=25
+## Great Smoky Mountain National Park
 
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
