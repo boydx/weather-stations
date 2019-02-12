@@ -3,7 +3,7 @@
 ## boyd.xyz/w
 ### [repo](https://github.com/boydx/weather-stations)
 
----
+---?image=presentation/img/p001.jpg&opacity=40
 ## Weather mapping in 
 # HD
 ### a season of Kentucky sunsets
@@ -12,7 +12,7 @@
 ## Weather mapping for
 # Funsies
 
----?image=presentation/img/p003.jpg&opacity=0
+---?image=presentation/img/p003.jpg
 ## Satellites, surveillance, chemtrails
 
 
@@ -20,9 +20,11 @@
 ## Automating 
 ### the capture, storage, and dissemination of webcam and satellite imagery
 
+---
+## CLI mapping 
 
 ---
-## Goals
+## Outline
 @ul[squares]
 * Maintain data hygiene
 * Test-drive ArcGIS Pro
