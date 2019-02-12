@@ -73,7 +73,39 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 ---
 <iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
 
----?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
+---
+```bash
+#SCRAPE!
+pcregrep -M -A 90 "<style>" Sevier2.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SevierForecast2.txt
+```
+
+---
+## Make yesterday
+@[2]
+@[3]
+@[4]
+@[5]
+@[6-7]
+```bash
+#!/bin/bash
+cd yesterday
+x=$(ls -1t) #list one file per line sort by newest first
+convert -delay 50 $x -loop 0 LookRock.gif
+date +%0y%m%d > ../date
+mkdir ../$(cat date)
+cp -rf ../yesterday/ ../$(cat date)/
+```
+
+
+---?image=presentation/img/p007.jpg&size=contain
+
+---?image=presentation/img/p007.jpg&size=contain&opacity=25
+## Archive
+@ul[squares]
+* Keep three years online
+* One year approximately 8 GB
+* [archive](https://www.outragegis.com/weather/img/animation/)
+@ulend
 
 ---
 ## Organization
