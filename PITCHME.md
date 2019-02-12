@@ -26,9 +26,9 @@
 ---
 ## Outline
 @ul[squares]
-* Maintain data hygiene
-* Test-drive ArcGIS Pro
-* Begin Red River Gorge base map
+* Project origins
+* GOES-16
+* A library of imagery
 @ulend
 
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
@@ -37,7 +37,7 @@
 * Year of the webcam
 @ulend
 
----?image=presentation/img/p003.jpg&opacity=40
+---?image=presentation/img/p006.jpg
 
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
