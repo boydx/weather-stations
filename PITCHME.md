@@ -31,7 +31,6 @@
 
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
 # 2007
-## Goals
 @ul[squares]
 Year of the webcam
 @ulend
