@@ -29,7 +29,7 @@
 * Begin Red River Gorge base map
 @ulend
 
----?image=https://outragegis.com/weather/img/animation/170410/LookRock-small.gif
+---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif
 # 2007
 
 
