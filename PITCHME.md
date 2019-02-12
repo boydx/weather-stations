@@ -32,7 +32,7 @@
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
 # 2007
 @ul[squares]
-Year of the webcam
+* Year of the webcam
 @ulend
 
 ---?image=presentation/img/p003.jpg&opacity=40
