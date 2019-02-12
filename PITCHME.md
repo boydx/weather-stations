@@ -8,7 +8,7 @@
 # HD
 ### a season of Kentucky sunsets
 
----
+---?image=presentation/img/p002.jpg&opacity=40
 ## Weather mapping for
 # Funsies
 
@@ -16,11 +16,11 @@
 ## Satellites, surveillance, chemtrails
 
 
----
+---?image=presentation/img/p005.jpg&opacity=70
 ## Automating 
 ### the capture, storage, and dissemination of webcam and satellite imagery
 
----
+---?image=presentation/img/p004.jpg&opacity=20
 ## CLI mapping 
 
 ---
