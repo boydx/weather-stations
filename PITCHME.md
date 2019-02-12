@@ -20,6 +20,7 @@
 ## Automating 
 ### the capture, storage, and dissemination of webcam and satellite imagery
 
+
 ---
 ## Goals
 @ul[squares]
@@ -27,6 +28,9 @@
 * Test-drive ArcGIS Pro
 * Begin Red River Gorge base map
 @ulend
+
+---?image=https://outragegis.com/weather/img/animation/170410/LookRock-small.gif
+# 2007
 
 
 ---?image=https://farm2.staticflickr.com/1483/24448087730_5b3b991737_h.jpg
