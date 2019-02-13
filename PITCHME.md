@@ -127,7 +127,27 @@ pcregrep -M -A 90 "<style>" Sevier2.txt | sed 's_<html><head>__g' | sed 's_font-
 ---?image=https://www.outragegis.com/weather/img/animation/180621/PurchaseKnob.gif&opacity=20
 # 2017
 @ul[squares]
-* Year of the webcam
-* Collect images every 15 minutes
+* Year of the satellite
+* GOES-R => GOES-16 => GOES East
+* Live feed and archive [on AWS](https://registry.opendata.aws/noaa-goes/) 
 @ulend
+
+---?image=presentation/img/p008.jpg&size=contain
+
+---?image=presentation/img/p008.jpg&size=contain&opacity=30
+## $200
+Data link with open [source software and hardware](https://pietern.github.io/goestools)
+
+---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain
+
+---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain&opacity=30
+## GOES East
+@ul[squares]
+* 16 spectral bands
+* Red @ 0.31 mi per pixel
+* Blue @ 0.62 mi per pixel
+* Veggie @ 0.62 mi per pixel
+@ulend
+
+---?image=https://www.nesdis.noaa.gov/sites/default/files/goes_west_goes_east_fleet.png&size=contain
 
