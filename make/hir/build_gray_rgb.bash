@@ -11,22 +11,14 @@
 
 #########################################
 # AUTHOR
-# This program was created at the University of Costa Rica (UCR)
-# It is intended as a tool for meteorology students to obtain data from GOES16
-# but it can be used by operational and research meteorology.
-#########################################
-
-#########################################
-# Warning: This program can download a LARGE amount of information
-# and this can cause problems with limited bandwidth networks or
-# computers with low storage capabilities.
+# This program was created at the University of Kentucky and University of Costa Rica (UCR)
 #########################################
 
 #########################################
 # SET UP ENIVRONMENT
 #
 source activate geo
-date +%l:%M%P\ %a,\ %b\ %d,\ %Y | sed 's/$/ - http:\/\/www.outrageGIS.com/g' > date.txt
+date +%l:%M%P\ %a,\ %b\ %d,\ %Y | sed 's/$/ - https:\/\/uky-gis.github.io/g' > date.txt
 
 #########################################
 
