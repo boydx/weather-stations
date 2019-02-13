@@ -3,7 +3,7 @@
 ## boyd.xyz/w
 ### [repo](https://github.com/boydx/weather-stations)
 
----?image=presentation/img/p001.jpg&opacity=40
+---?image=https://farm6.staticflickr.com/5688/23373057330_7c3e0cba0c_h.jpg&opacity=40
 ## Weather mapping in 
 # HD
 ### a season of Kentucky sunsets
@@ -21,7 +21,7 @@
 ### the capture, storage, and dissemination of webcam and satellite imagery
 
 ---?image=presentation/img/p004.jpg&opacity=20
-## CLI mapping 
+## Open source CLI mapping 
 
 ---
 ## Outline
@@ -69,6 +69,8 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 ```
 
 ---?image=https://www.outragegis.com/weather/img/LookRock.jpg&size=contain
+
+
 
 ---
 <iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
