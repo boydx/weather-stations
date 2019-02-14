@@ -189,15 +189,15 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 
 #########################################
 # AUTHOR
-# This program was created at the University of Costa Rica (UCR)
-# It is intended as a tool for meteorology students to obtain data from GOES16
-# but it can be used by operational and research meteorology.
+# This program was created at the University of Kentucky and University of Costa Rica (UCR)
 #########################################
 
 #########################################
-# Warning: This program can download a LARGE amount of information
-# and this can cause problems with limited bandwidth networks or
-# computers with low storage capabilities.
+# REQUIREMENTS
+# GDAL 2.3.3, released 2018/12/14 or greater
+# ImageMagick 6.7.7-10 2018-09-28 Q16 http://www.imagemagick.org or greater
+# aws-cli/1.16.81 Python/3.7.1 Linux/3.13.0-37-generic botocore/1.12.71 or greater
+#########################################
 #########################################
 
 #########################################
