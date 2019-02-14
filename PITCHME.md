@@ -189,9 +189,14 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 * [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for conda package manager
 @ulend
 
-
+<!-- aws s3 --no-sign-request ls --recursive noaa-goes16/ABI-L1b-RadF/2019/045/17 -->
 ---
 ## Bash script
+@[47]
+@[51]
+@[55]
+@[59]
+@[56]
 @[73-83]
 @[121-122]
 @[127-135]
