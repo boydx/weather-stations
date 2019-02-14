@@ -29,6 +29,7 @@
 * Project origins
 * GOES-16
 * An archive of imagery?
+* Demo live examples (fearlessly?)
 @ulend
 
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
@@ -36,7 +37,7 @@
 @ul[squares]
 * Year of the webcam
 * Collect images every 15 minutes
-* Put them on a web page
+* Give web page access
 @ulend
 
 ---?image=presentation/img/p006.jpg
@@ -382,7 +383,7 @@ montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.
 ## Opportunity
 @ul[squares]
 * Create a raster tileset for contiguous states
-* Wrap processes in Python script
+* Wrap processes in Python script – no scraping
 * Pause at time of Kentucky's sunset
 @ulend
 
