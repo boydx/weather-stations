@@ -345,16 +345,26 @@ gdal_merge.py -separate -a_nodata 255 255 255 -of GTiff -o final/rgb.tif --optfi
 convert final/rgb.tif -auto-level final/rgb_b.jpg
 composite -gravity center us_goes16_sm.png final/rgb_b.jpg final/rgb_a.jpg
 montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.jpg
-
 ```
+
+---?image=presentation/img/rgb.jpg&opacity=20
+# Demo?
+
+---?image=presentation/img/rgb.jpg&opacity=20
+## Conclusion on Kentucky's view
+@ul[squares]
+* [Gray](https://www.outragegis.com/weather/goes16/gray.jpg) & [Pseudo true-color](https://www.outragegis.com/weather/goes16/rgb.jpg)
+* Computationally intense (mostly in conversion to TIFF)
+* Using only portion of data
+@ulend
 
 ---
-## Bash script
-```bash
-#!/bin/bash
-source activate geo
-python3 getgoes16.py
-```
+## Opportunity
+@ul[squares]
+* Create a raster tileset for contiguous states
+* Wrap process in Python script
+* Pause at time of Kentucky's sunset
+@ulend
 
 ---
 ## Python
