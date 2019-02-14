@@ -347,7 +347,7 @@ composite -gravity center us_goes16_sm.png final/rgb_b.jpg final/rgb_a.jpg
 montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.jpg
 ```
 
----?image=presentation/img/rgb.jpg&opacity=20
+---?image=https://www.outragegis.com/weather/img/animation/180616/GrsmVis-large.gif&opacity=20
 # Demo?
 
 ---?image=presentation/img/rgb.jpg&opacity=20
@@ -358,11 +358,11 @@ montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.
 * Using only portion of data
 @ulend
 
----
+---?image=https://www.outragegis.com/weather/img/animation/180616/PurchaseKnob-small.gif&opacity=20
 ## Opportunity
 @ul[squares]
 * Create a raster tileset for contiguous states
-* Wrap process in Python script
+* Wrap processes in Python script
 * Pause at time of Kentucky's sunset
 @ulend
 
@@ -370,9 +370,11 @@ montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.
 ## Python
 @[25-30]
 @[32-36]
-@[127-135]
-@[137-139]
-@[158-161]
+@[38-42]
+@[60-63]
+@[138-140]
+@[159-162]
+@[198-201]
 ```python
 ###############################################
 #  Make RGB GOES 16 tileset every 15 minutes. #
@@ -585,3 +587,14 @@ if mode == "day":
     TilesGrayProduction = subprocess.run(shellTilesGrayProduction, shell=True, stdout=subprocess.PIPE)
     print(TilesProduction.stdout.decode('UTF-8'))
 ```
+---?image=presentation/img/p011.jpg&opacity=20
+## Current view
+@ul[squares]
+* [Updated](https://www.outragegis.com/weather/goes16/) every 15 minutes
+* Make GeoTIFFs available
+* Pause at time of Kentucky's sunset
+@ulend
+
+
+
+---?image=https://www.outragegis.com/weather/img/animation/180616/ColdMountain-small.gif&opacity=20
