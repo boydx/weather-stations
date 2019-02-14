@@ -28,7 +28,7 @@
 @ul[squares]
 * Project origins
 * GOES-16
-* A library of imagery
+* An archive of imagery?
 @ulend
 
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
@@ -588,11 +588,17 @@ if mode == "day":
 ---?image=presentation/img/p011.jpg&opacity=20
 ## Current view
 @ul[squares]
-* [Updated](https://www.outragegis.com/weather/goes16/) every 15 minutes
+* [Updated](https://www.outragegis.com/weather/goes16/map) every 15 minutes
 * Make GeoTIFFs available
-* Pause at time of Kentucky's sunset
+* Pause at time of [Kentucky's sunset](https://www.outragegis.com/weather/goes16/sunset/190214) 💙
 @ulend
 
 
-
 ---?image=https://www.outragegis.com/weather/img/animation/180616/ColdMountain-small.gif&opacity=20
+# 2019
+@ul[squares]
+* One week of tilesets is 8 GB
+* Archive not sustainable
+* Year-long animation of Kentucky at sunset
+* More practical [teaching opportunity](https://uky-gis.github.io/maps/goes-16/)
+@ulend
