@@ -45,7 +45,7 @@
 ## Great Smoky Mountain National Park
 [weather station](https://www.outragegis.com/weather/grsm/)
 
----?image=https://www.outragegis.com/weather/img/animation/180612/GrsmVis-large.gif&opacity=20
+---?image=https://i1.wp.com/www.outragegis.com/weather/090309/LookRock-090309-moonrise.jpg&opacity=30
 ## Tech stack
 @ul[squares]
 * Ubuntu Linux
@@ -76,6 +76,14 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 ## in the Great Smokies
 
 ---
+## Date stamp
+```bash
+#!/bin/bash
+t=$(date +%H%M) # 24-hour time with minutes, e.g., 1530
+cp LookRock.jpg yesterday/LookRock-$t.jpg
+```
+
+---
 <iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
 
 
@@ -88,14 +96,12 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 @[6-7]
 ```bash
 #!/bin/bash
-cd yesterday
-x=$(ls -1t) #list one file per line sort by newest first
+x=$(ls -1) #list one file per line
 convert -delay 50 $x -loop 0 LookRock.gif
-date +%0y%m%d > ../date
-mkdir ../$(cat date)
-cp -rf ../yesterday/ ../$(cat date)/
+date +%0y%m%d > ../date.txt # 190215
+mkdir ../$(cat date.txt)
+cp -r ../yesterday/ ../$(cat date.txt)/
 ```
-
 
 ---?image=presentation/img/p007.jpg&size=contain
 
@@ -105,6 +111,7 @@ cp -rf ../yesterday/ ../$(cat date)/
 * Keep three years online
 * One year approximately 8 GB
 * [yesterdays archived](https://www.outragegis.com/weather/img/animation/)
+* ~775 (x3) sunsets (and sunrises)
 @ulend
 
 
@@ -118,7 +125,8 @@ cp -rf ../yesterday/ ../$(cat date)/
 ---
 ```bash
 #Brute force! 
-pcregrep -M -A 90 "<style>" Sevier2.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SevierForecast2.txt
+curl https://nws.weather.gov/forecast > Smokies.txt
+pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SmokiesForecast.txt
 ```
 
 ---?image=https://www.outragegis.com/weather/img/cuga-vis.jpg
@@ -148,8 +156,9 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 @ul[squares]
 * 16 spectral bands
 * Red @ 0.31 mi per pixel
-* Blue @ 0.62 mi per pixel
 * Veggie @ 0.62 mi per pixel
+* Blue @ 0.62 mi per pixel
+* Not RGB
 @ulend
 
 ---?image=https://www.nesdis.noaa.gov/sites/default/files/goes_west_goes_east_fleet.png&size=contain
