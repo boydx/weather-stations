@@ -436,8 +436,6 @@ products = "L1b-RadC"
 
 # Select bands based on time
 sun = city.sun(date=datetime.now(), local=True)
-dt = datetime.now()
-dt = pytz.timezone('US/Eastern').localize(dt)
 if (dt > sun["sunrise"]) and (dt < sun["sunset"]):
     channels = "C01 C02 C03"
     mode = "day"
