@@ -84,10 +84,6 @@ cp LookRock.jpg yesterday/LookRock-$t.jpg
 ```
 
 ---
-<iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
-
-
----
 ## Make yesterday
 @[2]
 @[3]
@@ -102,6 +98,12 @@ date +%0y%m%d > ../date.txt # 190215
 mkdir ../$(cat date.txt)
 cp -r ../yesterday/ ../$(cat date.txt)/
 ```
+
+---
+<iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
+
+
+
 
 ---?image=presentation/img/p007.jpg&size=contain
 
