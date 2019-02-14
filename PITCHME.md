@@ -156,7 +156,7 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 ---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain
 
 ---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain
-@snap[center]
+@snap[midpoint]
 # ❤️
 
 ---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain&opacity=30
