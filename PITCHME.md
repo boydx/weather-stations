@@ -71,7 +71,7 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 
 ---?image=https://www.outragegis.com/weather/img/LookRock.jpg&size=contain
 
----?image=https://www.outragegis.com/weather/img/LookRock.jpg&opacity=30
+---?image=https://www.outragegis.com/weather/img/LookRock.jpg&opacity=30&size=contain
 # Yesterday 
 ## in the Great Smokies
 
