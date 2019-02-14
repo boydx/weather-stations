@@ -23,7 +23,7 @@
 ---?image=presentation/img/p004.jpg&opacity=20
 ## Open source CLI mapping 
 
----?image=https://www.outragegis.com/weather/img/animation/180612/GrsmVis-large.gif&opacity=20
+---?<!--image=https://www.outragegis.com/weather/img/animation/180612/GrsmVis-large.gif&opacity=20-->
 ## Outline
 @ul[squares]
 * Project origins
