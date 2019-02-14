@@ -130,7 +130,7 @@ cp -r ../yesterday/ ../$(cat date.txt)/
 curl https://nws.weather.gov/forecast > Smokies.txt
 pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-family: Arial !important;__g' | sed 's_<img src="/images/wtf/12.gif" border=0 height=35 width=30 alt=Print>__g' | sed 's_<img src="_<img src="http://forecast.weather.gov/_g' | sed 's_<a href="showsigwx_<a href="http://forecast.weather.gov/showsigwx_g' | sed 's_table width="800"_table width="100%"_g' | sed 's_<hr><br>__g' | sed 's_<br><br><br><br><br>_<br>_g' > SmokiesForecast.txt
 # Changed three times in 10 years
-# Now use Dark Sky API
+# 🤔 Dark Sky API
 ```
 
 ---?image=https://www.outragegis.com/weather/img/cuga-vis.jpg
