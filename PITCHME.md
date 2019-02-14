@@ -23,7 +23,7 @@
 ---?image=presentation/img/p004.jpg&opacity=20
 ## Open source CLI mapping 
 
----?<!--image=https://www.outragegis.com/weather/img/animation/180612/GrsmVis-large.gif&opacity=20-->
+---
 ## Outline
 @ul[squares]
 * Project origins
@@ -36,6 +36,7 @@
 @ul[squares]
 * Year of the webcam
 * Collect images every 15 minutes
+* Put them on a web page
 @ulend
 
 ---?image=presentation/img/p006.jpg
@@ -44,7 +45,7 @@
 ## Great Smoky Mountain National Park
 [weather station](https://www.outragegis.com/weather/grsm/)
 
----
+---?image=https://www.outragegis.com/weather/img/animation/180612/GrsmVis-large.gif&opacity=20
 ## Tech stack
 @ul[squares]
 * Ubuntu Linux
@@ -70,7 +71,8 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 
 ---?image=https://www.outragegis.com/weather/img/LookRock.jpg&size=contain
 
-
+---?image=https://www.outragegis.com/weather/img/LookRock.jpg&opacity=20
+# Yesterday in the Great Smokies
 
 ---
 <iframe width="100%" height="500px" src="https://www.outragegis.com/weather/img/animation/yesterday"><iframe>
