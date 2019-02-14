@@ -15,6 +15,13 @@
 #########################################
 
 #########################################
+# REQUIREMENTS
+# GDAL 2.3.3, released 2018/12/14 or greater
+# ImageMagick 6.7.7-10 2018-09-28 Q16 http://www.imagemagick.org or greater
+# aws-cli/1.16.81 Python/3.7.1 Linux/3.13.0-37-generic botocore/1.12.71 or greater
+#########################################
+
+#########################################
 # SET UP ENIVRONMENT
 #
 source activate geo
