@@ -381,7 +381,7 @@ montage -geometry +0+0 -background white -label "@date.txt" final/rgb_a.jpg rgb.
 ---?image=presentation/img/rgb.jpg&opacity=20
 ## Conclusion on Kentucky's view
 @ul[squares]
-* [Gray](https://www.outragegis.com/weather/goes16/gray.jpg) & [Pseudo true-color](https://www.outragegis.com/weather/goes16/rgb.jpg)
+* [Gray](https://www.outragegis.com/weather/goes16/temp/gray.jpg) & [Pseudo true-color](https://www.outragegis.com/weather/goes16/temp/rgb.jpg)
 * Computationally intense (mostly in conversion to TIFF)
 * Using only portion of data
 @ulend
