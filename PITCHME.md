@@ -201,7 +201,7 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 @[66]
 @[73-83]
 @[121-122]
-@[127-135]
+@[126-135]
 @[137-139]
 @[158-161]
 ```bash
