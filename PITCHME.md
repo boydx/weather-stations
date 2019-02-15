@@ -166,7 +166,7 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 ## GOES East
 @ul[squares]
 * 16 spectral bands
-* Red @ 0.31 mi per pixel[download](https://outrageGIS.com/weather/goes16/C02_F_19021414.jpg)
+* Red @ 0.31 mi per pixel [download](https://outrageGIS.com/weather/goes16/C02_F_19021414.jpg)
 * Veggie @ 0.62 mi per pixel
 * Blue @ 0.62 mi per pixel
 * Not RGB
