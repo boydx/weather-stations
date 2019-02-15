@@ -78,6 +78,8 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 
 ---
 ## Date stamp
+@[2]
+0@[3]
 ```bash
 #!/bin/bash
 t=$(date +%H%M) # 24-hour time with minutes, e.g., 1530
@@ -138,7 +140,7 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 
 ---?image=https://www.outragegis.com/weather/img/cuga-vis.jpg&opacity=25
 ## Not detailed enough
-### We expect more from our data.
+### Is there a better public source?
 
 ---?image=https://www.outragegis.com/weather/img/animation/180621/PurchaseKnob.gif&opacity=20
 # 2017
@@ -164,7 +166,7 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 ## GOES East
 @ul[squares]
 * 16 spectral bands
-* Red @ 0.31 mi per pixel
+* Red @ 0.31 mi per pixel[download](https://outrageGIS.com/weather/goes16/C02_F_19021414.jpg)
 * Veggie @ 0.62 mi per pixel
 * Blue @ 0.62 mi per pixel
 * Not RGB
@@ -181,7 +183,7 @@ Data link with [open source software and hardware](https://pietern.github.io/goe
 * Processed every 15 minutes
 @ulend
 
----?image=presentation/img/p010.jpg&opacity=30
+---?image=https://www.outragegis.com/weather/goes16/rgb.jpg&opacity=20
 ## Additional tech
 @ul[squares]
 * [GDAL](https://www.gdal.org)
