@@ -79,7 +79,7 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 ---
 ## Date stamp
 @[2]
-0@[3]
+@[3]
 ```bash
 #!/bin/bash
 t=$(date +%H%M) # 24-hour time with minutes, e.g., 1530
