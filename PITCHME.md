@@ -1,7 +1,8 @@
 ---?image=presentation/img/st-b.svg
 <h3 style="color:rgba(255,255,255,0.2)">Presentation @</h3>
 ## boyd.xyz/w
-### [repo](https://github.com/boydx/weather-stations)
+### [repo](https://github.com/boydx/weather-stations) 
+current [map](https://www.outragegis.com/weather/goes16/map/)
 
 ---?image=https://farm6.staticflickr.com/5688/23373057330_7c3e0cba0c_h.jpg&opacity=30
 ## Weather mapping in 
