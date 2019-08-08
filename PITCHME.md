@@ -1,6 +1,6 @@
 ---?image=presentation/img/st-b.svg
 <h3 style="color:rgba(255,255,255,0.2)">Presentation @</h3>
-## boyd.xyz/w
+## boyd.xyz/wa
 ### [repo](https://github.com/boydx/weather-stations) 
 current [map](https://www.outragegis.com/weather/goes16/map/)
 
