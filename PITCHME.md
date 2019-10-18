@@ -1,28 +1,48 @@
 ---?image=presentation/img/st-b.svg
-<h3 style="color:rgba(255,255,255,0.2)">Presentation @</h3>
+<h3 style="color:rgba(255,255,255,0.4)">Presentation @</h3>
 ## boyd.xyz/u
 ### [repo](https://github.com/boydx/weather-stations) 
-current [map](https://www.outragegis.com/weather/goes16/map/)
+current [map](https://www.outragegis.com/weather/goes16/map/) | [contact](https://boydx.github.io)
 
----?image=https://farm6.staticflickr.com/5688/23373057330_7c3e0cba0c_h.jpg&opacity=30
-## Weather mapping in 
-# HD
-### a season of Kentucky sunsets
+---?image=presentation/img/pot.jpg&opacity=40
+## Boyd Shearer 
+### Lecturer, Mapping & GIS
+([video](https://newmapsplus.as.uky.edu/video/introduction-new-maps-plus-0))
+
+---?image=presentation/img/nmp-uky.png
+([link](https://newmapsplus.uky.edu))
+
+---?image=https://www.outragegis.com/weather/goes16/rgb.jpg&opacity=50
+## Open source
+# Command line
+### mapping
 
 
----?image=presentation/img/p004.jpg&opacity=20
-## Open source CLI mapping 
+---?image=https://www.outragegis.com/weather/img/animation/191016/LookRock.gif&opacity=40
+## Check out the
+# Sky: 
+### Sunsets, sunrises, & sensors
+
+---
+## Objectives
+@ul[squares]
+* Continuously process high-resolution imagery
+* Make public, and, where appropriate,
+    * geotiffs
+    * animated gifs
+    * raster tile sets
+@ulend
 
 ---
 ## Outline
 @ul[squares]
-* Project origins
+* Origins
 * GOES-16
-* An archive of imagery?
-* Demo live examples (fearlessly?)
+* Download
+* Demo 🔥💣☠️⚰️ fearlessly
 @ulend
 
----?image=https://www.outragegis.com/weather/img/animation/190710/PurchaseKnob-small.gif&opacity=20
+---?image=https://www.outragegis.com/weather/img/animation/190710/PurchaseKnob-small.gif&opacity=30
 ## Origins
 @ul[squares]
 * Collect weather imagery
@@ -33,9 +53,9 @@ current [map](https://www.outragegis.com/weather/goes16/map/)
 ---?image=https://outragegis.com/weather/img/animation/170201/LookRock-small.gif&opacity=20
 # 2007
 @ul[squares]
-* Year of the webcam
+* High-availability NPS air monitoring webcams
 * Collect images every 15 minutes
-* Give web page access
+* Make a weather station
 @ulend
 
 ---?image=presentation/img/p006.jpg
@@ -51,11 +71,14 @@ current [map](https://www.outragegis.com/weather/goes16/map/)
 * CLI text utilities, [grep](https://www.pcre.org/original/doc/html/pcregrep.html), [sed](https://www.gnu.org/software/sed/manual/sed.html), etc.
 * [Imagemagick](https://www.imagemagick.org/)
 * task scheduler [cron](https://en.wikipedia.org/wiki/Cron)
-* Brute force scraping
 @ulend
 
 ---
-## Brief example
+# 😱
+
+---
+## CLI baby steps
+@[1]
 @[2]
 @[3]
 @[4]
@@ -74,8 +97,12 @@ montage -geometry +0+0 -background white -label "@date.txt" grsm.jpg LookRock.jp
 # Yesterday 
 ## in the Great Smokies
 
+---?image=https://www.outragegis.com/weather/img/LookRock.jpg&opacity=30&size=contain
+## Date stamp 🗝️
+
 ---
-## Date stamp
+## Date stamp 🗝️
+
 @[2]
 @[3]
 ```bash
@@ -119,10 +146,12 @@ cp -r ../yesterday/ ../$(cat date.txt)/
 
 
 ---
-## Problems?
+## Summary
 @ul[squares]
-* HTML scraping is an alley fight 
-* Need a new satellite
+* Old school tools and data sources
+* remarkably stable and error proof.
+* Haven't changed much in over 10 years.
+* OK! Not elegant!
 @ulend
 
 ---
@@ -134,13 +163,7 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 # 😘 Dark Sky API
 ```
 
----?image=https://www.outragegis.com/weather/img/cuga-vis.jpg
-
----?image=https://www.outragegis.com/weather/img/cuga-vis.jpg&opacity=25
-## Not detailed enough
-### Is there a better public source?
-
----?image=https://www.outragegis.com/weather/img/animation/180621/PurchaseKnob.gif&opacity=20
+---?image=https://www.outragegis.com/weather/img/animation/180621/PurchaseKnob.gif&opacity=40
 # 2017
 @ul[squares]
 * Year of the satellite
@@ -148,8 +171,6 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 * Live feed and archive [on AWS](https://registry.opendata.aws/noaa-goes/) 
 @ulend
 
-
----?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain
 
 ---?image=presentation/img/20190441300_GOES16-ABI-FD-GEOCOLOR-1808x1808.jpg&size=contain
 @snap[midpoint]
@@ -165,17 +186,6 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 * Not RGB
 @ulend
 
----?image=https://www.nesdis.noaa.gov/sites/default/files/goes_west_goes_east_fleet.png&size=contain
-
-
----?image=presentation/img/p009.jpg&opacity=30
-## Kentucky's view
-@ul[squares]
-* [Gray](https://www.outragegis.com/weather/goes16/gray.jpg) (2 MB)
-* [Pseudo true-color](https://www.outragegis.com/weather/goes16/rgb.jpg) (500 KB)
-* Processed every 15 minutes
-@ulend
-
 ---?image=https://www.outragegis.com/weather/goes16/rgb.jpg&opacity=20
 ## Additional tech
 @ul[squares]
@@ -184,21 +194,34 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 * [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for Python and conda package manager
 @ulend
 
-<!-- aws s3 --no-sign-request ls --recursive noaa-goes16/ABI-L1b-RadF/2019/045/17 -->
+---?image=presentation/img/p009.jpg&opacity=30
+## Kentucky's view
+@ul[squares]
+* Access/project/convert [netCDF](https://www.unidata.ucar.edu/software/netcdf/docs/netcdf_introduction.html) format
+* [Gray](https://www.outragegis.com/weather/goes16/gray.jpg) (2 MB)
+* [Pseudo true-color](https://www.outragegis.com/weather/goes16/rgb.jpg) (500 KB)
+* Processed every 15 minutes
+@ulend
+
+
+---
+```bash 
+aws s3 --no-sign-request ls --recursive noaa-goes16/ABI-L1b-RadF/2019/291/12
+```
 
 
 ---?image=presentation/img/rgb.jpg&opacity=20
 ## Conclusion on Kentucky's view
 @ul[squares]
-* [Gray](https://www.outragegis.com/weather/goes16/temp/gray.jpg) & [Pseudo true-color](https://www.outragegis.com/weather/goes16/temp/rgb.jpg)
 * Computationally intense (mostly in conversion to TIFF)
 * Using only portion of data
+* Let's throw more "juice" at these "chips"!
 @ulend
 
 ---?image=https://www.outragegis.com/weather/img/animation/180616/PurchaseKnob-small.gif&opacity=20
 ## Opportunity
 @ul[squares]
-* Create a raster tileset for contiguous states
+* Create a raster tile set for contiguous states
 * Wrap processes in Python script – no scraping
 * Pause at time of Kentucky's sunset
 @ulend
@@ -436,7 +459,7 @@ if mode == "day":
 ---?image=presentation/img/p011.jpg&opacity=20
 ## Current view
 @ul[squares]
-* [Updated](https://www.outragegis.com/weather/goes16/map) every 15 minutes
+* [Updated](https://www.outragegis.com/weather/goes16) every 15 minutes
 * Make GeoTIFFs available
 * Pause at time of [Kentucky's sunset](https://www.outragegis.com/weather/goes16/sunset/190214) 💙
 @ulend
@@ -445,7 +468,7 @@ if mode == "day":
 ---?image=https://www.outragegis.com/weather/img/animation/180616/ColdMountain-small.gif&opacity=20
 # 2019
 @ul[squares]
-* One week of tilesets is 8 GB
+* One week of tile sets is 8 GB
 * Archive not sustainable
 
 
