@@ -1,6 +1,6 @@
 ---?image=presentation/img/st-b.svg
 <h3 style="color:rgba(255,255,255,0.4)">Presentation @</h3>
-## boyd.xyz/u
+## boyd.xyz/n
 ### [repo](https://github.com/boydx/weather-stations) 
 current [map](https://www.outragegis.com/weather/goes16/map/) | [contact](https://boydx.github.io)
 
@@ -19,11 +19,11 @@ current [map](https://www.outragegis.com/weather/goes16/map/) | [contact](https:
 
 
 ---?image=https://www.outragegis.com/weather/img/animation/191016/LookRock.gif&opacity=40
-## Check out the
-# Sky: 
+## Visual appreciation
+# Sky
 ### Sunsets, sunrises, & sensors
 
----
+---?image=presentation/img/tacoma-105.jpg&opacity=30
 ## Objectives
 @ul[squares]
 * Continuously process high-resolution imagery
@@ -33,7 +33,7 @@ current [map](https://www.outragegis.com/weather/goes16/map/) | [contact](https:
     * raster tile sets
 @ulend
 
----
+---?image=presentation/img/tacoma-102.jpg&opacity=30
 ## Outline
 @ul[squares]
 * Origins
@@ -73,7 +73,7 @@ current [map](https://www.outragegis.com/weather/goes16/map/) | [contact](https:
 * task scheduler [cron](https://en.wikipedia.org/wiki/Cron)
 @ulend
 
----
+---?image=presentation/img/tacoma-108.jpg&opacity=30
 # 😱
 
 ---
@@ -132,7 +132,6 @@ cp -r ../yesterday/ ../$(cat date.txt)/
 
 
 
-
 ---?image=presentation/img/p007.jpg&size=contain
 
 ---?image=presentation/img/p007.jpg&size=contain&opacity=25
@@ -145,7 +144,7 @@ cp -r ../yesterday/ ../$(cat date.txt)/
 @ulend
 
 
----
+---?image=presentation/img/tacoma-107.jpg&opacity=30
 ## Summary
 @ul[squares]
 * Old school tools and data sources
@@ -168,7 +167,7 @@ pcregrep -M -A 90 "<style>" Smokies.txt | sed 's_<html><head>__g' | sed 's_font-
 @ul[squares]
 * Year of the satellite
 * GOES-R => GOES-16 => GOES East
-* Live feed and archive [on AWS](https://registry.opendata.aws/noaa-goes/) 
+* Live feed and archive [on AWS](https://registry.opendata.aws/noaa-goes/)
 @ulend
 
 
@@ -240,8 +239,9 @@ aws s3 --no-sign-request ls --recursive noaa-goes16/ABI-L1b-RadF/2019/291/12
 @[60-63]
 @[78-89]
 @[93-108]
+@[127-134]
 @[138-143]
-@[147]
+@[147-150]
 @[172]
 @[178]
 @[202]
@@ -469,8 +469,8 @@ if mode == "day":
 # 2019
 @ul[squares]
 * One week of tile sets is 8 GB
-* Archive not sustainable
+* Archive not sustainable on current server
+@ulend
 
-
----?image=https://www.outragegis.com/weather/img/NewGap.jpg&opacity=80
-### Thank you!
+---?image=presentation/img/tacoma-104.jpg&opacity=30
+### Thank you NACIS!
