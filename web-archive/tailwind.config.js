@@ -4,7 +4,12 @@ module.exports = {
     "./main.js",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['"Merriweather Sans"', 'ui-sans-serif', 'system-ui'],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

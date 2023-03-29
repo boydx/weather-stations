@@ -5,6 +5,9 @@
 x=$(ColdMountain-*.jpg)
 convert -delay 50  $x -loop 0 ColdMountain.gif
 
+x=$(find NewGap-*.jpg)
+convert -delay 50  $x -loop 0 NewGap2.gif
+
 # Create LookRock time-lapse animation
 
 x=$(LookRock-*.jpg)
