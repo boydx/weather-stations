@@ -1,6 +1,6 @@
 import "./style.css";
 
-const years = [22, 23];
+const years = [24, 25];
 
 const months = [
   ["January", 31],
@@ -18,7 +18,7 @@ const months = [
 ];
 
 for (let y of years) {
-  let data ='';
+  let data = '';
   y === years[1] ? data = '' : data = 'data/';
   const x = document.querySelector(`#y${y}`);
   x.innerHTML = `<h2 class='text-xl mb-2'>20${y}</h2>`;
@@ -44,7 +44,7 @@ for (let y of years) {
       } else {
         day = `${d}`;
       }
-      x1+= `<option data-bs-toggle="modal" data-bs-target="#exampleModal" value="https://www.outrageGIS.com/${data}weather/img/animation/${y}${month}${day}">${y}${month}${day}</option>`;
+      x1 += `<option data-bs-toggle="modal" data-bs-target="#exampleModal" value="https://www.outrageGIS.com/${data}weather/img/animation/${y}${month}${day}">${y}${month}${day}</option>`;
     }
     x1 += `</select></div>`;
     x.innerHTML += x1;
@@ -52,6 +52,6 @@ for (let y of years) {
 }
 
 const selection = document.querySelector('select')
-  addEventListener('change', function(e) {
-    window.open(e.target.value);
-  })
+addEventListener('change', function (e) {
+  window.open(e.target.value);
+})
